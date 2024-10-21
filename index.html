@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="flex">
-    <section class="sidebar flex">
+    <section class="sidebar flex column">
       <div class="logo-container flex">
         <div class="logo">
           <img src="./images/odin-logo.png" alt="odin logo" />
@@ -28,7 +28,7 @@
       </p>
     </section>
 
-    <section class="form-side flex">
+    <section class="form-side flex column">
       <div class="text">
         <p>
           This is not a real online service! You know you need something like
@@ -38,35 +38,35 @@
       </div>
 
       <form>
-        <div class="form-wrapper">
+        <div class="form-wrapper flex column">
           <h3>Let's do this!</h3>
 
-          <div class="input-row">
-            <div>
+          <div class="input-row flex">
+            <div class="flex column">
               <label for="firstname">First Name</label>
               <input type="text" name="firstname" id="firstname" required />
             </div>
-            <div>
+            <div class="flex column">
               <label for="lastname">Last name</label>
               <input type="text" name="lastname" id="lastname" required />
             </div>
           </div>
-          <div class="input-row">
-            <div>
+          <div class="input-row flex">
+            <div class="flex column">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
             </div>
-            <div>
+            <div class="flex column">
               <label for="phone">Phone</label>
               <input type="tel" name="phone" id="phone" />
             </div>
           </div>
-          <div class="input-row">
-            <div>
+          <div class="input-row flex">
+            <div class="flex column">
               <label for="password">Password</label>
               <input type="password" name="password" id="password" required />
             </div>
-            <div>
+            <div class="flex column">
               <label for="confirmpassword">Confirm Password</label>
               <input
                 type="password"
