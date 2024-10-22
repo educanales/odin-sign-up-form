@@ -45,16 +45,19 @@
             <div class="flex column">
               <label for="firstname">First Name</label>
               <input type="text" name="firstname" id="firstname" required />
+              <span></span>
             </div>
             <div class="flex column">
-              <label for="lastname">Last name</label>
+              <label for="lastname">Last Name</label>
               <input type="text" name="lastname" id="lastname" required />
+              <span></span>
             </div>
           </div>
           <div class="input-row flex">
             <div class="flex column">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
+              <span></span>
             </div>
             <div class="flex column">
               <label for="phone">Phone</label>
@@ -64,7 +67,13 @@
           <div class="input-row flex">
             <div class="flex column">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                />
+                <span></span>
             </div>
             <div class="flex column">
               <label for="confirmpassword">Confirm Password</label>
@@ -72,7 +81,9 @@
                 type="password"
                 name="confirmpassword"
                 id="confirmpassword"
-                required />
+                minlength="8"
+                />
+                <span></span>
             </div>
           </div>
         </div>
@@ -81,8 +92,8 @@
           <button type="submit">Create Account</button>
           <p class="login">Already have an account? <a href="#">Log in</a></p>
         </div>
-        
       </form>
+      
     </section>
   </body>
 </html>
