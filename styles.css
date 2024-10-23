@@ -149,21 +149,15 @@ input {
   width: 250px;
   border: 1px solid #E5E7EB;
   border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+input::placeholder {
+  color: #bfc1c4;
 }
 
 input:user-invalid {
   border-color: var(--error-color);
-}
-
-input:user-invalid + span::after {
-  content: url(./images/warning-sign.svg) " 8 characters minimum";
-  position: absolute;
-  color: var(--error-color);
-  font-size: 0.8rem;
-}
-
-input:user-valid {
-  border-color: var(--valid-color);
 }
 
 input + span {
@@ -176,6 +170,34 @@ input:required + span::after {
   font-size: 0.7rem;
   top: -50px;
   right: 0;
+}
+
+input:user-invalid + .hint-icon::before {
+  content: url(./images/warning-sign.svg);
+  position: absolute;
+  color: var(--error-color);
+  font-size: 0.8rem;
+  top: -22px;
+  left: 230px;
+}
+
+input:user-valid + .hint-icon::before {
+  content: "✓";
+  position: absolute;
+  color: var(--valid-color);
+  top: -27px;
+  left: 230px;
+}
+
+input[type="password"]:user-invalid ~ .warning-text::before {
+  content: "Password must be at least 8 characters";
+  position: absolute;
+  color: var(--error-color);
+  font-size: 0.8rem;
+}
+
+input:user-valid {
+  border-color: var(--valid-color);
 }
 
 .account-container {
