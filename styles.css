@@ -99,11 +99,14 @@ body {
   color: #fff;
 }
 
+.photo-credit a:hover,
+.photo-credit:focus {
+  color: #bfc1c4;
+}
+
 /* Form side */
 .form-side {
   width: 100%;
-  /* justify-content: center; */
-  /* gap: 1rem; */
 }
 
 .text {
@@ -120,9 +123,7 @@ body {
 }
 
 form {
-  /* margin: 0 auto; */
   width: 100%;
-  /* padding: 1rem; */
 }
 
 .form-wrapper {
@@ -228,4 +229,9 @@ button:active {
   color: #596D48;
   font-weight: 600;
   text-decoration: none;
+}
+
+.login a:hover,
+.login a:focus {
+  color: #80c055;
 }
